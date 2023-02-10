@@ -1,5 +1,11 @@
 import React from "react";
 import clgicon from "./images/colg.svg";
+import renovus from "./images/renovus.png";
+import crosscope from "./images/crosscope.svg";
+import Js from "../components/images/Js.png";
+import ReactJs from "../components/images/ReactJs.png";
+import Git from "../components/images/Git.png";
+import NextJs from "../components/images/NextJs.jpg";
 
 export default function About() {
   return (
@@ -20,6 +26,7 @@ export default function About() {
             role="tab"
             aria-controls="v-pills-education"
             aria-selected="true"
+            style={{ color: "white" }}
           >
             Education
           </button>
@@ -32,6 +39,7 @@ export default function About() {
             role="tab"
             aria-controls="v-pills-experience"
             aria-selected="false"
+            style={{ color: "white" }}
           >
             Experience
           </button>
@@ -44,6 +52,7 @@ export default function About() {
             role="tab"
             aria-controls="v-pills-skills"
             aria-selected="false"
+            style={{ color: "white" }}
           >
             Skills
           </button>
@@ -60,12 +69,12 @@ export default function About() {
             id="v-pills-education"
             role="tabpanel"
             aria-labelledby="v-pills-education-tab"
-            tabindex="0"
+            tabIndex="0"
             style={{
               marginTop: "2%",
-              color: "#313C8E",
               maxWidth: "100%",
-              backgroundColor: "white",
+              backgroundColor: "#060606",
+              color: "white",
               padding: "2vh",
               borderRadius: "1vh",
             }}
@@ -74,8 +83,14 @@ export default function About() {
               src={clgicon}
               className="img-fluid"
               alt="React Image"
-              style={{ padding: "1vh", width: "50%" }}
+              style={{
+                padding: "1vh",
+                width: "50%",
+                backgroundColor: "white",
+                borderRadius: "1vh",
+              }}
             />
+
             <span>
               <hr className="dropdown-divider" />
               Uttaranchal University Dehradun
@@ -94,18 +109,279 @@ export default function About() {
             id="v-pills-experience"
             role="tabpanel"
             aria-labelledby="v-pills-experience-tab"
-            tabindex="0"
+            tabIndex="0"
           >
-            <h1>experience</h1>
+            <div className="container text-center">
+              <div className="row align-items-start">
+                <div className="col-sm-6">
+                  <div
+                    className="card"
+                    style={{
+                      width: "100%",
+                      backgroundColor: "#060606",
+                      color: "white",
+                    }}
+                  >
+                    <img
+                      src={renovus}
+                      className="card-img-top"
+                      alt="..."
+                      style={{
+                        marginTop: "2vh",
+                        height: "10%",
+                        width: "40%",
+                        marginLeft: "30%",
+                      }}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">JavaScript Developer</h5>
+                    </div>
+                    <ul className="list-group list-group-flush">
+                      <li
+                        className="list-group-item"
+                        style={{
+                          backgroundColor: "#060606",
+                          color: "white",
+                        }}
+                      >
+                        Sep 2022 - Dec 2022 · (4 months )
+                      </li>
+                    </ul>
+                    <p
+                      className="card-text"
+                      style={{ textAlign: "start", marginLeft: "1vh" }}
+                    >
+                      During my Job, I worked there as a JavaScript developer
+                      and my work was to build Chrome extensions. I was
+                      responsible for the end-to-end functionality of the
+                      extension like the UI the background process and their
+                      whole working.
+                    </p>
+                    <div className="card-body">
+                      <a href="https://prospectss.com/" className="card-link">
+                        <button type="button" class="btn btn-primary">
+                          Company Website
+                        </button>
+                      </a>
+                      <a
+                        href="https://github.com/WhySoOpKratos/Experience_Letter/archive/refs/heads/main.zip"
+                        className="card-link"
+                      >
+                        <button type="button" class="btn btn-primary">
+                          Experience Letter
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div
+                    className="card"
+                    style={{
+                      width: "100%",
+                      backgroundColor: "#060606",
+                      color: "white",
+                    }}
+                  >
+                    <img
+                      src={crosscope}
+                      className="card-img-top"
+                      alt="..."
+                      style={{
+                        height: "100%",
+                        width: "40%",
+                        marginLeft: "30%",
+                        paddingTop: "2vh",
+                        textAlign: "center",
+                      }}
+                    />
+                    <div className="card-body">
+                      <h5 className="card-title">React Js Developer intern</h5>
+                    </div>
+                    <ul className="list-group list-group-flush">
+                      <li
+                        className="list-group-item"
+                        style={{
+                          backgroundColor: "#060606",
+                          color: "white",
+                        }}
+                      >
+                        Jan 2022 - Apr 2022 · (4 months )
+                      </li>
+                    </ul>
+                    <p
+                      className="card-text"
+                      style={{ textAlign: "start", marginLeft: "1vh" }}
+                    >
+                      During my internship, I worked on their ReactJS web
+                      application and I was responsible for building end-to-end
+                      functionality of the dashboard, login & logout page,
+                      Account section, table etc. I was also responsible for
+                      integration with the backend using RestAPIs.
+                    </p>
+                    <div className="card-body">
+                      <a href="https://crosscope.com/" className="card-link">
+                        <button type="button" class="btn btn-primary">
+                          Company Website
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             className="tab-pane fade"
             id="v-pills-skills"
             role="tabpanel"
             aria-labelledby="v-pills-skills-tab"
-            tabindex="0"
+            tabIndex="0"
           >
-            <h1>skills</h1>
+            <div class="container text-center">
+              <div class="row">
+                <div className="col-sm">
+                  <div class="col">
+                    <div className="col-sm-6 text-center">
+                      <img
+                        src={Js}
+                        className="img-fluid"
+                        alt="React Image"
+                        style={{ width: "70%", alignItems: "center" }}
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      <div
+                        class="col"
+                        style={{ display: "flex", width: "30%" }}
+                      >
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm">
+                  <div class="col">
+                    <div className="col-sm-6 text-center">
+                      <img
+                        src={ReactJs}
+                        className="img-fluid"
+                        alt="React Image"
+                        style={{ width: "70%", alignItems: "center" }}
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      <div
+                        class="col"
+                        style={{ display: "flex", width: "30%" }}
+                      >
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm">
+                  <div class="col">
+                    <div className="col-sm-6 text-center">
+                      <img
+                        src={NextJs}
+                        className="img-fluid"
+                        alt="React Image"
+                        style={{ width: "70%", alignItems: "center" }}
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      <div
+                        class="col"
+                        style={{ display: "flex", width: "30%" }}
+                      >
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm">
+                  <div class="col">
+                    <div className="col-sm-6 text-center">
+                      <img
+                        src={Git}
+                        className="img-fluid"
+                        alt="React Image"
+                        style={{
+                          width: "70%",
+                          alignItems: "center",
+                          maxWidth: "20vh",
+                        }}
+                      />
+                    </div>
+                    <div className="col-sm-6">
+                      <div
+                        class="col"
+                        style={{ display: "flex", width: "30%" }}
+                      >
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <div className="col-sm">
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -113,26 +389,19 @@ export default function About() {
   );
 }
 
-// <div className="card" style="width: 18rem;">
-//   <img src={clgicon} className="card-img-top" alt="..." />
-//   <div className="card-body">
-//     <h5 className="card-title">Card title</h5>
-//     <p className="card-text">
-//       Some quick example text to build on the card title and make up
-//       the bulk of the card's content.
-//     </p>
-//   </div>
-//   <ul className="list-group list-group-flush">
-//     <li className="list-group-item">An item</li>
-//     <li className="list-group-item">A second item</li>
-//     <li className="list-group-item">A third item</li>
-//   </ul>
-//   <div className="card-body">
-//     <a href="#" className="card-link">
-//       Card link
-//     </a>
-//     <a href="#" className="card-link">
-//       Another link
-//     </a>
-//   </div>
+// <div className="col-sm">
+//   <img
+//     src={ReactJs}
+//     className="img-fluid"
+//     alt="React Image"
+//     style={{ width: "70%" }}
+//   />
+// </div>
+// <div className="col-sm">
+//   <img
+//     src={}
+//     className="img-fluid"
+//     alt="React Image"
+//     style={{ width: "70%" }}
+//   />
 // </div>

@@ -18,12 +18,12 @@
   font-size: 5vh;
   padding-inline: 2vh;
 }
-.App i:hover {
+.App .main-home i:hover {
   color: #68fe9a;
   font-size: 6vh;
 }
 
-.App .main-nav link {
+.App .main-nav .main-home .link {
   color: #fefaf1;
 }
 
@@ -67,6 +67,9 @@
   initial-value: 0turn;
 }
 
-.App .main-nav .nav-link .active Link:hover {
+/* .App .main-nav .nav-link .active Link:hover {
   color: #68fe9a;
-}
+} */
+
+/* .App .About {
+} */
