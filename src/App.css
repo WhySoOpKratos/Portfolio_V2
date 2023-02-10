@@ -2,7 +2,6 @@
   font-weight: 600;
   font-size: 3vh;
   background-color: #24272c;
-  /* background-image: url("./components/images/bcimg.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
@@ -66,4 +65,8 @@
   syntax: "<angle>";
   inherits: true;
   initial-value: 0turn;
+}
+
+.App .main-nav .nav-link .active Link:hover {
+  color: #68fe9a;
 }
