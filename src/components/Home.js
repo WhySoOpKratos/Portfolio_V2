@@ -62,7 +62,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/chirag-mandyal-543575152/">
               <i className="bi bi-linkedin"></i>
             </a>
-            <a href="https://wa.me/9882724284">
+            <a href="https://wa.me/+91 9882724284">
               <i className="bi bi-whatsapp"></i>
             </a>
           </div>
