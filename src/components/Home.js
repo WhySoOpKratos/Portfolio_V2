@@ -29,17 +29,17 @@ export default function Home() {
     >
       <div className="container text-center">
         <div className="row align-items-start">
-          <div className="col">
+          <div className="col-sm-6">
             <div className="home-image-box">
               <img
                 src={home}
                 className="img-fluid"
                 alt="React Image"
-                style={{ padding: "1vh" }}
+                style={{ padding: "1vh", width: "100%" }}
               />
             </div>
           </div>
-          <div className="col" style={{ textAlign: "start" }}>
+          <div className="col-sm-6" style={{ textAlign: "start" }}>
             <p>Hi , i'm</p>
             <h1>Chirag Mandyal</h1>
             <h1>Front-End Developer</h1>
